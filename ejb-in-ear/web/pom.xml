@@ -44,8 +44,8 @@
 
         <!-- Import the ejb project so that the JSF managed bean can use the EJB -->
         <dependency>
-            <groupId>org.wildfly.quickstarts</groupId>
-            <artifactId>wildfly-ejb-in-ear-ejb</artifactId>
+            <groupId>com.maggioni</groupId>
+            <artifactId>EJB-StatefulBean-ejb-in-ear-ejb</artifactId>
             <type>ejb</type>
             <scope>provided</scope>
         </dependency>

@@ -66,8 +66,8 @@
             <!-- Define the version of the EJB jar so that we don't need
             to repeat ourselves in every module -->
             <dependency>
-                <groupId>org.wildfly.quickstarts</groupId>
-                <artifactId>wildfly-ejb-in-ear-ejb</artifactId>
+                <groupId>com.maggioni</groupId>
+                <artifactId>EJB-StatefulBean-ejb-in-ear-ejb</artifactId>
                 <version>${project.version}</version>
                 <type>ejb</type>
             </dependency>
