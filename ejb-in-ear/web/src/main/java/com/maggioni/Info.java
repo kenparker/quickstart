@@ -1,4 +1,4 @@
-package org.jboss.as.quickstarts.ear.controller;
+package com.maggioni;
 
 import com.maggioni.InfoCreator;
 import java.io.Serializable;

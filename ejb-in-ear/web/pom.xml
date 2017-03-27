@@ -28,10 +28,9 @@
         <groupId>org.wildfly.quickstarts</groupId>
         <version>10.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>wildfly-ejb-in-ear-web</artifactId>
+    <artifactId>EJB-StatefulBean-ejb-in-ear-web</artifactId>
     <packaging>war</packaging>
-    <name>WildFly Quickstart: ejb-in-ear - web</name>
-    <description>WildFly Quickstarts: EJB and War in an Ear - WEB</description>
+   
 
     <licenses>
         <license>
@@ -73,5 +72,7 @@
             </plugin>
         </plugins>
     </build>
-
+    <groupId>com.maggioni</groupId>
+    <name>EJB-StatefulBean-ejb-in-ear-web</name>
+    <description>Demo</description>
 </project>

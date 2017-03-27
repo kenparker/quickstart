@@ -28,10 +28,12 @@
         <groupId>org.wildfly.quickstarts</groupId>
         <version>10.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>wildfly-ejb-in-ear-ear</artifactId>
+    <artifactId>EJB-StatefulBean-ejb-in-ear-ear</artifactId>
+    <name>EJB-StatefulBean-ejb-in-ear-ear</name>
+    <description>Demo</description>
+    <groupId>com.maggioni</groupId>
     <packaging>ear</packaging>
-    <name>WildFly Quickstart: ejb-in-ear - ear</name>
-    <description>WildFly Quickstarts: EJB and WAR in an EAR - EAR</description>
+    
 
     <licenses>
         <license>
@@ -44,8 +46,8 @@
     <dependencies>
         <!-- Dependencies on the EJB and Web modules so that they can be found by the EAR plug-in -->
         <dependency>
-            <groupId>org.wildfly.quickstarts</groupId>
-            <artifactId>wildfly-ejb-in-ear-web</artifactId>
+            <groupId>com.maggioni</groupId>
+            <artifactId>EJB-StatefulBean-ejb-in-ear-web</artifactId>
             <type>war</type>
         </dependency>
         <dependency>
@@ -56,7 +58,7 @@
     </dependencies>
 
     <build>
-      <finalName>${project.parent.artifactId}</finalName>
+        <finalName>${project.parent.artifactId}</finalName>
         <plugins>
             <!-- EAR plug-in -->
             <plugin>
@@ -68,16 +70,16 @@
                     <!-- Tell Maven we are using Java EE -->
                     <version>6</version>
                     <!-- Use Java EE ear libraries as needed. Java EE ear libraries
-                        are in easy way to package any libraries needed in the ear, and automatically
-                        have any modules (EJB-JARs and WARs) use them -->
+                    are in easy way to package any libraries needed in the ear, and automatically
+                    have any modules (EJB-JARs and WARs) use them -->
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <modules>
-                    <!-- Default context root of the web app is /jboss-ejb-in-ear-web.
+                        <!-- Default context root of the web app is /jboss-ejb-in-ear-web.
                         If a custom context root is needed, uncomment the following snippet to
                         register our War as a web module and set the contextRoot property -->
                         <webModule>
-                            <groupId>org.wildfly.quickstarts</groupId>
-                            <artifactId>wildfly-ejb-in-ear-web</artifactId>
+                            <groupId>com.maggioni</groupId>
+                            <artifactId>EJB-StatefulBean-ejb-in-ear-web</artifactId>
                             <contextRoot>/wildfly-ejb-in-ear</contextRoot>
                         </webModule>
                     </modules>

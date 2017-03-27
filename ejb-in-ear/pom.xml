@@ -75,8 +75,8 @@
             <!-- Define the version of the WAR so that we don't need to repeat
             ourselves in every module -->
             <dependency>
-                <groupId>org.wildfly.quickstarts</groupId>
-                <artifactId>wildfly-ejb-in-ear-web</artifactId>
+                <groupId>com.maggioni</groupId>
+                <artifactId>EJB-StatefulBean-ejb-in-ear-web</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
                 <scope>compile</scope>
